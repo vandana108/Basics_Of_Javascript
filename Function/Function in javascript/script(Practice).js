@@ -62,3 +62,16 @@ const some = {
     console.log('this is my Project ID')
   }
 }
+
+
+function a(b){// a is higher order function
+  console.log(b);
+  // console.log('welcome to board');
+  b(); //this is callback function
+}
+function sayHi()
+{
+  console.log('Have a safe journey');
+}
+sayHi
+a(sayHi);
