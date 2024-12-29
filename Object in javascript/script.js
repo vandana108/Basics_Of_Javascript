@@ -48,10 +48,28 @@
 
 
 //Object Methods
+// const person = {
+//    firstname: 'Jane',
+//    lastname: 'Doe',
+//    fullname: function() {
+//      return this.firstname + ' ' + this.lastname;
+//    }
+//  };
+
+
+// Displaying Properties in a Loop
 const person = {
-   firstname: 'Jane',
-   lastname: 'Doe',
-   fullname: function() {
-     return this.firstname + ' ' + this.lastname;
-   }
- };
+  name:"John",
+  age:30,
+  city:"New York"
+
+};
+
+//Build a Text
+
+let text =  "";
+for(let x in person){
+  text= text+person[x]+ " ";
+
+};
+
