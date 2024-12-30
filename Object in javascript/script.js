@@ -86,9 +86,29 @@
 // // Stringify Object
 // let myString = JSON.stringify(person);
 
-function Person(first, last, age, eye) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.eyeColor = eye;
+
+// Object Constructor Functions
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+
+//   //create 2 Person Objects
+
+//   const myFather = new Person("John", "Doe", "50", "blue")
+//   const myMother = new Person("Sally", "Rally", 48, 'green')
+//   //Display Nationality
+  
+// }
+
+const obj = {
+  a:10,
+  b:20,
+  str: "Hello",
+  x:function(){
+    console.log(this.a);
+    console.log(this.str);
+  },
 }
+obj.x();
