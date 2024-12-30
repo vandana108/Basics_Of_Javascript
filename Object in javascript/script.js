@@ -58,18 +58,37 @@
 
 
 // Displaying Properties in a Loop
-const person = {
-  name:"John",
-  age:30,
-  city:"New York"
+// const person = {
+//   name:"John",
+//   age:30,
+//   city:"New York"
 
-};
+// };
 
-//Build a Text
+// //Build a Text
 
-let text =  "";
-for(let x in person){
-  text= text+person[x]+ " ";
+// let text =  "";
+// for(let x in person){
+//   text= text+person[x]+ " ";
 
-};
+// };
 
+
+//using object entries
+
+// const fruits = {Bananas:300, Oranges:200, Apples:500, Kiwi: 600};
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York"
+// };
+// // Stringify Object
+// let myString = JSON.stringify(person);
+
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
