@@ -15,21 +15,28 @@
 // }
 
 // JavaScript String slice()
-let text = "Apple, Banana, Kiwi";
-let parts = text.slice(7, 13);
-let str1 = parts;
-let str2 = "Vandana Rai";
-let name1 = str2.slice(1, 2);
+// let text = "Apple, Banana, Kiwi";
+// let parts = text.slice(7, 13);
+// let str1 = parts;
+// let str2 = "Vandana Rai";
+// let name1 = str2.slice(1, 2);
 
 
-// If we omit the second parameter, the method will slice out the rest of the string:
-let str3 = text.slice(7);
+// // If we omit the second parameter, the method will slice out the rest of the string:
+// let str3 = text.slice(7);
 
-// If a parameter is negative, the position is counted from the end of the string:
-let text = "Apple, Banana, Kiwi";
-let part = text.slice(-12);
+// // If a parameter is negative, the position is counted from the end of the string:
+// let text = "Apple, Banana, Kiwi";
+// let part = text.slice(-12);
 
-// This example slices out a portion of a string from position -12 to position -6:
+// // This example slices out a portion of a string from position -12 to position -6:
 
-let text = "Apple, Banana, Kiwi";
-let part = text.slice(-12, -6);
+// let text = "Apple, Banana, Kiwi";
+// let part = text.slice(-12, -6);
+
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+
+let text = "Please locate where 'locate' occurs!";
+text.lastIndexOf("locate", 15);
