@@ -114,12 +114,18 @@
 // obj.x();
 
 //create an object
-const person ={};
+// const person ={};
 
-//Add Properties
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue";
+// //Add Properties
+// person.firstName = "John";
+// person.lastName = "Doe";
+// person.age = 50;
+// person.eyeColor = "blue";
 
-console.log(person.age);
+// console.log(person.age);
+
+const fruits = {Banana:300, Oranges:200, Apples:500};
+let text = "";
+for(let [fruit, amount] of Object.entries(fruits)){
+  text = text+fruit+ ": " + amount + "<br>";
+}
