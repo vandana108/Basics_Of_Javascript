@@ -102,13 +102,24 @@
   
 // }
 
-const obj = {
-  a:10,
-  b:20,
-  str: "Hello",
-  x:function(){
-    console.log(this.a);
-    console.log(this.str);
-  },
-}
-obj.x();
+// const obj = {
+//   a:10,
+//   b:20,
+//   str: "Hello",
+//   x:function(){
+//     console.log(this.a);
+//     console.log(this.str);
+//   },
+// }
+// obj.x();
+
+//create an object
+const person ={};
+
+//Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+console.log(person.age);

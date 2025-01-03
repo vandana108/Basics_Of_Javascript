@@ -19,14 +19,26 @@
 //   // console.log('Hello World');
 // }
 
-let paras= document.querySelectorAll('p');
-for(let i = 0; i<paras.length; i++)
+// let paras= document.querySelectorAll('p');
+// for(let i = 0; i<paras.length; i++)
+// {
+//   let para = paras[i];
+//   para.addEventListener('click', function()
+//   {
+//       alert('You Clicked on para:');
+
+//   })
+// }
+
+console.log("Hi");
+let paras = document.querySelectorAll('p');
+function alertPara(event){
+  alert("You have Clicked on Para: " + event.target.textContent);
+
+}
+for(let i = 0; i<paras.length;i++)
 {
   let para = paras[i];
-  para.addEventListener('click', function()
-  {
-      alert('You Clicked on para:'+(i+1));
-
-  })
+  console.log("eventListener added");
+  para.addEventListener('click', alertPara);
 }
-
