@@ -124,8 +124,18 @@
 
 // console.log(person.age);
 
-const fruits = {Banana:300, Oranges:200, Apples:500};
-let text = "";
-for(let [fruit, amount] of Object.entries(fruits)){
-  text = text+fruit+ ": " + amount + "<br>";
-}
+// const fruits = {Banana:300, Oranges:200, Apples:500};
+// let text = "";
+// for(let [fruit, amount] of Object.entries(fruits)){
+//   text = text+fruit+ ": " + amount + "<br>";
+// }
+
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "en",
+  get lang() {
+    return this.language;
+  }
+};
